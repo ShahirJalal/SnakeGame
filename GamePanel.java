@@ -55,6 +55,10 @@ public class GamePanel extends JPanel implements ActionListener {
                 g.setColor(Color.green);
                 g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
             }
+            else {
+                g.setColor(new Color(45, 180, 0));
+                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+            }
         }
 
     }
@@ -94,7 +98,14 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
+
+        if (running) {
+            move();
+            checkApple();
+            checkCollisions();
+
+        }
+        repaint();
 
     }
 
