@@ -114,6 +114,10 @@ public class GamePanel extends JPanel implements ActionListener {
             running = false;
         }
 
+        if(!running) {
+            timer.stop();
+        }
+
     }
     public void gameOver(Graphics g) {
 
