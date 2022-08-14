@@ -1,2 +1,2 @@
 # SnakeGame
- I'm learning to code a snake game
+ I'm learning to code a snake game using Java
